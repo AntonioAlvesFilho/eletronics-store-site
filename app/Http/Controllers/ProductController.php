@@ -10,20 +10,22 @@ class ProductController extends Controller
 	public function index()
 	{
 
+
 		return view('home');
 	}
 
 	public function product()
 	{
 
-		return view('product.products');
+		$products = Product::all();
+		return view('product.products', ['products' => $products]);
 	}
 
 	public function showItem($id)
 	{
-		
+		$product = Product::findOrFail($id);
 
-		return view('product.showItem');
+		return view('product.showItem', ['product' => $product]);
 	}
 
 	public function store(request $request)
