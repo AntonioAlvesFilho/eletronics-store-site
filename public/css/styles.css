@@ -1,0 +1,315 @@
+* {
+	font-family: 'Roboto';
+}
+
+textarea:focus {
+	border: none;
+
+}
+
+
+.logo {
+	width: 50px;
+}
+
+.carousel-item-start {}
+
+.msg {
+	width: 100%;
+	background-color: green;
+	color: white;
+	border: 1px solid darkgreen;
+	text-align: center;
+	padding: 30px;
+	margin: 0 !important;
+}
+
+.banner {
+	width: 100%;
+	padding: 0px !important;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#products {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.dive {
+	display: flex;
+	flex-direction: row;
+	gap: 4%;
+	width: 90%;
+	justify-content: center;
+}
+
+.btns .btn {
+	margin: 30px 30px 0 0;
+}
+
+.row>* {
+	padding: 0 !important;
+}
+
+.imgs {
+	width: 50%;
+}
+
+.each {
+	display: flex;
+	flex-direction: row !important;
+	justify-content: space-around;
+}
+
+.itens {
+	text-align: center;
+	align-items: center;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin: 30px 0;
+	padding: 5px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.create-btn {
+	background-color: green;
+	height: 40px;
+	width: 60%;
+	color: white;
+	border: none;
+	padding: 10px;
+	align-self: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+
+}
+
+header {
+	position: sticky;
+	top: 0;
+	min-height: 5vw;
+	z-index: 1;
+}
+
+.h1 {
+	margin: 100px !important;
+	font-size: 3em !important;
+}
+
+.flex-column {
+	display: flex;
+	width: 40%;
+	justify-content: space-around;
+}
+
+a.nav-link {
+	color: gainsboro !important;
+}
+
+.navbar {
+	min-height: 5vw;
+	background-color: red;
+
+}
+
+.homeMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgb(0, 0, 0);
+	background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(45, 45, 45, 1) 100%);
+	color: rgb(214, 214, 214);
+}
+
+
+.game-container {
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 1%;
+	align-items: center;
+}
+
+.game-mini-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: transparent;
+	width: 30%;
+	height: 100%;
+	gap: 5%;
+	font-size: 125%;
+	border-radius: 5%;
+}
+
+.game-title {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	padding: 5%;
+	border-radius: 7%;
+}
+
+.game-title:hover {
+	transition: 0.7s;
+	background-color: rgb(95, 95, 95);
+	cursor: pointer;
+}
+
+.carousel-item-main {
+	display: flex;
+	flex-direction: row;
+	gap: 5% !important;
+	width: 100%;
+}
+
+
+.flex-center {
+	display: flex !important;
+	justify-content: center !important;
+
+}
+
+.carousel-item-mini {
+	margin-right: -70% !important;
+}
+
+.testt {
+	display: flex;
+	align-items: center !important;
+}
+
+.carousel-item-mini {
+	gap: 2%;
+}
+
+
+.carousel {
+	width: 80%;
+}
+
+.carousel img {
+	border-radius: 15px;
+}
+
+.form-group {
+	display: flex;
+	margin: 30px 0;
+}
+
+.showItem-top {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	gap: 20px;
+	min-height: 400px;
+}
+
+.showItem-imgText {
+	max-width: 30%;
+}
+
+.showItem-imgText p {
+	margin: 10%;
+	font-size: 1.1em;
+}
+
+.btn {
+	color: white !important;
+	border: white 1px solid !important;
+	padding: 10px;
+	font-weight: bolder;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	gap: 2%;
+}
+
+.item-img {
+	max-width: 400px;
+}
+
+.title {
+	margin: 50px;
+}
+
+.console-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+}
+
+.console-container img {
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.console-container h3 {
+	text-align: center;
+}
+
+.price-avaliable {
+	color: green;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+
+.image-edit {
+	width: 200px;
+}
+
+.banner-edit {
+
+	width: 500px;
+}
+
+.w-10 {
+	width: 10%;
+}
+
+.color1 {
+	background: rgb(0, 86, 255) !important;
+	background: linear-gradient(90deg, rgb(0, 71, 214) 4%, rgba(2, 0, 142, 1) 80%) !important;
+}
+
+.color2 {
+	background: rgb(3, 0, 56) !important;
+	background: linear-gradient(90deg, rgba(3, 0, 56, 1) 0%, rgba(15, 40, 62, 1) 50%, rgba(3, 0, 56, 1) 100%) !important;
+}
+
+.color3 {
+	background: rgb(217, 0, 0) !important;
+	background: linear-gradient(90deg, rgba(217, 0, 0, 1) 24%, rgba(131, 0, 0, 1) 79%) !important;
+}
+
+.color4 {
+	background: rgb(0, 150, 32) !important;
+	background: linear-gradient(90deg, rgba(0, 150, 32, 1) 20%, rgb(22, 88, 0) 86%) !important;
+}
+
+.color5 {
+	background: rgb(0, 10, 153) !important;
+	background: linear-gradient(90deg, rgba(0, 10, 153, 1) 20%, rgba(3, 0, 51, 1) 80%) !important;
+}
