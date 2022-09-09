@@ -16,15 +16,14 @@ class ProductController extends Controller
 	public function product()
 	{
 
-		$products = Product::all();
-		return view('product.products', ['products' => $products]);
+		return view('product.products');
 	}
 
 	public function showItem($id)
 	{
-		$product = Product::findOrFail($id);
+		
 
-		return view('product.showItem', ['product' => $product]);
+		return view('product.showItem');
 	}
 
 	public function store(request $request)
