@@ -44,10 +44,33 @@
 																								<li class="nav-item">
 																												<a class="nav-link active" aria-current="page" href="#">Home</a>
 																								</li>
+																								@guest
+																												<li class="nav-item">
+																																<a class="nav-link active" aria-current="page" href="/login">Login</a>
+																												</li>
 
-																								<li class="nav-item">
-																												<a class="nav-link" href="/product/products">Product Manager</a>
-																								</li>
+																												<li class="nav-item">
+																																<a class="nav-link active" aria-current="page" href="/register">Register</a>
+																												</li>
+
+																								@endguest
+
+																								@auth
+
+																												<li class="nav-item">
+																																<form action="/logout" method="POST">
+																																				@csrf
+																																				<a class="nav-link" href="/logout"
+																																								onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+																																</form>
+																												</li>
+
+																												<li class="nav-item">
+																																<a class="nav-link" href="/product/products">Product Manager</a>
+																												</li>
+
+																								@endauth
+
 
 																								<li class="nav-item dropdown">
 																												<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
