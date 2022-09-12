@@ -23,3 +23,13 @@ Route::post('/products', [ProductController::class, 'store']);
 Route::delete('products/{id}', [ProductController::class, 'destroy']);
 Route::get('product/edit/{id}', [ProductController::class, 'edit']);
 Route::put('product/update/{id}', [ProductController::class, 'update']);
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
