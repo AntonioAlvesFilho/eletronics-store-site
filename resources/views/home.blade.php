@@ -5,7 +5,7 @@
 
 
 @section('content')
-				<div class="homeMain">
+				<div class="homeMain container-xxl">
 								<div id="carouselGames" class="carousel slide game-container" data-bs-ride="true">
 												<div class="game-mini-container">
 																<div data-bs-target="#carouselGames" data-bs-slide-to="0" class="game-title active" aria-current="true"
@@ -34,27 +34,45 @@
 																				<img src="/img/carousel/zelda.png" class=" w-100" alt="...">
 																</div>
 												</div>
+												<div class="carousel-indicators">
+																<button type="button" data-bs-target="#carouselGames" data-bs-slide-to="0" class="active"
+																				aria-current="true" aria-label="Slide 1"></button>
+																<button type="button" data-bs-target="#carouselGames" data-bs-slide-to="1" aria-label="Slide 2"></button>
+																<button type="button" data-bs-target="#carouselGames" data-bs-slide-to="2" aria-label="Slide 3"></button>
+																<button type="button" data-bs-target="#carouselGames" data-bs-slide-to="3" aria-label="Slide 4"></button>
+												</div>
 
 								</div>
-								<h2>Recomendações</h2>
+
 
 								<div id="carouselRecommended" class="carousel slide recommended-container" data-bs-ride="true">
 
-												<div class="carousel-inner flex-center">
+												<div class="carousel-inner ">
 
-																<div class="carousel-item  carousel-item-mini active">
-																				<img src="/img/carousel/gran.png" class=" w-10" alt="...">
-																				<img src="/img/carousel/spider.png" class=" w-10" alt="...">
-																				<img src="/img/carousel/cup.png" class=" w-10" alt="...">
+																<div class="carousel-item   carousel-item-mini active">
+																				<h2 align="center" class="mt-5 mb-3">Recomendações</h2>
+																				<div class="flex-center">
+																								<img src="/img/carousel/gran.png" class=" w-12" alt="...">
+																								<img src="/img/carousel/spider.png" class=" w-12 ms-4" alt="...">
+																								<img src="/img/carousel/cup.png" class=" w-12 ms-4" alt="...">
+																								<img src="/img/carousel/two.jpg" class=" w-12 ms-4" alt="...">
+																								<img src="/img/carousel/kerbal.jpg" class=" w-12 ms-4" alt="...">
+																								<img src="/img/carousel/cyber.jpg" class=" w-12 ms-4" alt="...">
+																				</div>
 																</div>
 
 																<div class="carousel-item carousel-item-mini">
-
-																				<img src="/img/carousel/horizon.png" class=" w-10" alt="...">
-																				<img src="/img/carousel/mine.png" class=" w-10" alt="...">
-																				<img src="/img/carousel/fort.png" class=" w-10" alt="...">
-
+																				<h2 align="center" class="mt-5 mb-3">Lançamentos</h2>
+																				<div class="flex-center">
+																								<img src="/img/carousel/horizon.png" class=" w-12" alt="...">
+																								<img src="/img/carousel/kerbal2.jpg" class=" w-12 ms-4" alt="...">
+																								<img src="/img/carousel/ragnarok.jpg" class=" w-12 ms-4" alt="...">
+																								<img src="/img/carousel/overwatch2.jpg" class=" w-12 ms-4" alt="...">
+																								<img src="/img/carousel/bayoneta.jpg" class=" w-12 ms-4" alt="...">
+																								<img src="/img/carousel/multiversus.png" class=" w-12 ms-4" alt="...">
+																				</div>
 																</div>
+
 
 																<button class="carousel-control-prev" type="button" data-bs-target="#carouselRecommended"
 																				data-bs-slide="prev">

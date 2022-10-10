@@ -8,6 +8,10 @@ textarea:focus {
 
 }
 
+body {
+	background-color: rgb(8, 8, 8) !important;
+}
+
 
 .logo {
 	width: 50px;
@@ -127,6 +131,7 @@ a.nav-link {
 .homeMain {
 	display: flex;
 	flex-direction: column;
+	max-width: 1280px !important;
 	align-items: center;
 	justify-content: center;
 	background: rgb(0, 0, 0);
@@ -153,7 +158,9 @@ a.nav-link {
 	gap: 5%;
 	font-size: 125%;
 	border-radius: 5%;
+
 }
+
 
 .game-title {
 	display: flex;
@@ -187,10 +194,6 @@ a.nav-link {
 .testt {
 	display: flex;
 	align-items: center !important;
-}
-
-.carousel-item-mini {
-	gap: 2%;
 }
 
 
@@ -281,8 +284,21 @@ a.nav-link {
 	width: 500px;
 }
 
+.carousel-indicators {
+	margin-bottom: 0px !important;
+}
+
 .w-10 {
 	width: 10%;
+}
+
+
+.w-12 {
+	width: 12%;
+}
+
+.carousel-control-prev .carousel-control-next {
+	width: 5% !important;
 }
 
 .color1 {
@@ -308,4 +324,22 @@ a.nav-link {
 .color5 {
 	background: rgb(0, 10, 153) !important;
 	background: linear-gradient(90deg, rgba(0, 10, 153, 1) 20%, rgba(3, 0, 51, 1) 80%) !important;
+}
+
+@media (max-width: 768px) {
+	.game-mini-container {
+		display: none !important;
+	}
+}
+
+@media (max-width: 375px) {
+	.carousel {
+		width: 90% !important;
+	}
+}
+
+@media (min-width: 769px) {
+	.carousel-indicators {
+		display: none !important;
+	}
 }
