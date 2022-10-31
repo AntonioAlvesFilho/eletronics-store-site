@@ -90,4 +90,16 @@
 
 								</div>
 
-				@endsection
+								<div class="imgDiv" align="center">
+												<h2>Lançamento em Destaque</h2>
+
+												<img class="hot" src="/img/dead.jpg" alt="">
+
+												<div class="description">
+																<p> O clássico de terror de sobrevivência e ficção científica está de volta, completamente recriado.</p>
+												</div>
+
+								</div>
+				</div>
+
+@endsection

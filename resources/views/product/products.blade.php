@@ -15,9 +15,9 @@
 
 												<div class='each'>
 																<div class="flex-column">
+
 																				@foreach ($products as $product)
 																								<div class="dive">
-
 																												<div class="itens">
 
 																																<img class="imgs" src="/img/products/{{ $product->image }}" alt="img">
@@ -79,7 +79,7 @@
 
 																				<div class="form-group">
 
-																								<label for="company">Company Name</label>
+																								<label for="company">Company's Name</label>
 																								<select name="company" class="form-control" id="company" required>
 																												<option value=''>Empresa</option>
 																												<option value="Nintendo">NIntendo</option>
@@ -117,7 +117,7 @@
 
 																				<div class="form-group">
 
-																								<label for="description">Produt's Description:</label>
+																								<label for="description">Product's Description:</label>
 																								<textarea class="form-group" cols="40" rows="5" name="description" id="description" required></textarea>
 
 																				</div>

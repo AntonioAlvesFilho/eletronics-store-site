@@ -25,15 +25,19 @@
 <body>
 				<header>
 
-
-
-
-
 								<nav class="@yield('test') navbar navbar-dark bg-dark">
 
-
 												<div class="container-fluid ">
-																<a class="navbar-brand" href="/"><img class="logo" src="/img/logo.png" alt=""></a>
+																<a class="navbar-brand" href="/"><img class="logo" src="/img/logo.png" alt="logo"></a>
+
+																@if (isset($company))
+																				@foreach ($company as $companies)
+																								<img class="logo" src="/img/company/{{ $companies->logo }}" alt="logo">
+																				@endforeach
+
+
+																@endif
+
 																<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 																				data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
 																				aria-label="Toggle navigation">
@@ -78,11 +82,11 @@
 																																Consoles
 																												</a>
 																												<ul class="dropdown-menu">
-																																<li><a class="dropdown-item" href="/products/12">Sony</a></li>
-																																<li><a class="dropdown-item" href="/products/4">Microsoft</a></li>
-																																<li><a class="dropdown-item" href="/products/3">Valve</a></li>
-																																<li><a class="dropdown-item" href="/products/6">Switch Oled</a></li>
-																																<li><a class="dropdown-item" href="/products/5">Sega</a></li>
+																																<li><a class="dropdown-item" href="/products/sony/12">Sony</a></li>
+																																<li><a class="dropdown-item" href="/products/microsoft/4">Microsoft</a></li>
+																																<li><a class="dropdown-item" href="/products/valve/3">Valve</a></li>
+																																<li><a class="dropdown-item" href="/products/nintendo/6">Switch Oled</a></li>
+																																<li><a class="dropdown-item" href="/products/sega/5">Sega</a></li>
 																												</ul>
 																								</li>
 																				</ul>
@@ -96,7 +100,7 @@
 
 				<main>
 								<div class="container-fluid">
-												<div class="row">
+												<div class="row justify-content-center">
 																@if (session('msg'))
 																				<p class="msg">{{ session('msg') }}</p>
 																@endif
@@ -108,8 +112,7 @@
 
 				{{-- ///////////////////////////////////// --}}
 
-				<footer class="d-flex
-												flex-wrap justify-content-evenly align-items-center py-3 my-4 border-top">
+				<footer class="d-flex testee flex-wrap justify-content-evenly align-items-center py-3 my-4 border-top">
 								<p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
 
 

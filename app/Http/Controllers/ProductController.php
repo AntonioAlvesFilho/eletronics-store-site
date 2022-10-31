@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Company;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -10,8 +11,8 @@ class ProductController extends Controller
 	public function index()
 	{
 
-
 		return view('home');
+		
 	}
 
 	public function product()
@@ -19,18 +20,28 @@ class ProductController extends Controller
 
 		$products = Product::all();
 		return view('product.products', ['products' => $products]);
+
 	}
 
-	public function showItem($id)
+	public function showItem($name, $id)
 	{
+
+		$company = \DB::table('products')
+		->select('*')
+		->join('company','products.company','=','company.name')
+		->where('company', $name)
+		->get();
+
 		$product = Product::findOrFail($id);
 
-		return view('product.showItem', ['product' => $product]);
+	
+		return view('product.showItem', ['product' => $product, 'company' => $company]);
+
 	}
 
 	public function store(request $request)
 	{
-
+		
 		$product = new Product;
 
 		$product->name = $request->name;
@@ -89,8 +100,6 @@ class ProductController extends Controller
 
 	public function update(Request $request)
 	{
-
-
 		$data = $request->all();
 
 		if ($request->hasfile('image') && $request->file('image')->isValid()) {
