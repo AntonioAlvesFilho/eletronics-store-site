@@ -53,3 +53,7 @@ Route::delete('products/{id}', [ProductController::class, 'destroy']);
 
 Route::put('product/update/{id}', [ProductController::class, 'update']);
 
+Route::get('/teste', function() {
+	$img = Image::make('https://www.google.com/imgres?imgurl=https%3A%2F%2Fciclovivo.com.br%2Fwp-content%2Fuploads%2F2018%2F10%2FiStock-536613027.jpg&imgrefurl=https%3A%2F%2Fciclovivo.com.br%2Fvida-sustentavel%2Fequilibrio%2Fde-um-respiro-19-imagens-que-trazem-paz%2F&tbnid=Got0AjVFKctzBM&vet=12ahUKEwjjufezudv7AhVPOLkGHdYJCvAQMygAegUIARDeAQ..i&docid=qzv3t14B6znotM&w=1254&h=836&q=imagens&ved=2ahUKEwjjufezudv7AhVPOLkGHdYJCvAQMygAegUIARDeAQ')->resize(300, 200);
+	return $img->response('jpg');
+});

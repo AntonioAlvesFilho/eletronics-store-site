@@ -22,20 +22,17 @@
 				<title> @yield('title') </title>
 </head>
 
-<body>
+<body class="dark">
 				<header>
 
-								<nav class="@yield('test') navbar navbar-dark bg-dark">
+								<nav class="@yield('navbar-color') navbar navbar-dark bg-dark">
 
 												<div class="container-fluid ">
-																<a class="navbar-brand" href="/"><img class="logo" src="/img/logo.png" alt="logo"></a>
+																<a class="navbar-brand" href="/"><img class="logo" src="/img/logo.png" onclick=""
+																								alt="logo"></a>
 
 																@if (isset($company))
-																				@foreach ($company as $companies)
-																								<img class="logo" src="/img/company/{{ $companies->logo }}" alt="logo">
-																				@endforeach
-
-
+																				@yield('company-logo')
 																@endif
 
 																<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -60,7 +57,6 @@
 																								@endguest
 
 																								@auth
-
 																												<li class="nav-item">
 																																<form action="/logout" method="POST">
 																																				@csrf
@@ -69,10 +65,18 @@
 																																</form>
 																												</li>
 
-																												<li class="nav-item">
-																																<a class="nav-link" href="/product/products">Product Manager</a>
-																												</li>
+																												<li class="nav-item dropdown">
+																																<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+																																				aria-expanded="false">
+																																				Manegement
+																																</a>
+																																<ul class="dropdown-menu">
+																																				<li><a class="dropdown-item" href="/product/products">Product Manager</a></li>
+																																				<li><a class="dropdown-item" href="/game/games">Game Manager</a></li>
+																																				<li><a class="dropdown-item" href="/company/companies">Company Manager</a></li>
 
+																																</ul>
+																												</li>
 																								@endauth
 
 
@@ -127,7 +131,8 @@
 				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
 								integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
 				</script>
-
+				<script src="/js/jquery-3.6.1.js"></script>
+				<script src="/js/script.js"></script>
 </body>
 
 </html>

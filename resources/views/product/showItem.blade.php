@@ -4,11 +4,20 @@
 
 @section('content')
 
-@section('test')
+
+@section('navbar-color')
 
 				@if (isset($product))
 								{{ $product->company }}
 				@endif
+@endsection
+
+@section('company-logo')
+
+				@foreach ($company as $companies)
+								<img class="logo" src="/img/company/{{ $companies->logo }}" alt="logo">
+				@endforeach
+
 @endsection
 
 <img class="banner" src="/img/products/{{ $product->banner }}" alt="banner">

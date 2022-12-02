@@ -1,26 +1,24 @@
 @extends('layouts.main')
 
 @section('content')
-				<div>
+				
+
+				<div align="center">
 								@foreach ($company as $companies)
-												<img class="imgs" src="/img/company/{{ $companies->logo }}" alt="logo">
+												<img class="logo" style="display: inline" src="/img/company/{{ $companies->logo }}" alt="">
 								@endforeach
 				</div>
 
+				<br> <br> <br>
+
+				<h1 style="color:white;" align="center">Adicionar nova Empresa</h1>
 				<form class="form dp-flex" action="/company" method="POST" enctype="multipart/form-data">
 								@csrf
 
 								<div class="form-group">
 
-												<label for="name">Company1s Name</label>
-												<select name="name" class="form-control" id="name" required>
-																<option value=''>Empresa</option>
-																<option value="Nintendo">NIntendo</option>
-																<option value="Sony">Sony</option>
-																<option value="Microsoft">Microsoft</option>
-																<option value="Valve">Valve</option>
-																<option value="Sega">Sega</option>
-												</select>
+												<label for="name">Company's Name</label>
+												<input name="name" class="form-control" id="name" required placeholder="Type Here">
 								</div>
 
 								<div class="form-group">

@@ -8,7 +8,7 @@
 
 				<img id="mainbanner" src="/img/productsbanner.png" alt="">
 
-				<div id="products">
+				<div id="products" style="background-color: #fff;">
 
 								<h1 class="h1">Produtos</h1>
 								@auth
@@ -81,12 +81,11 @@
 
 																								<label for="company">Company's Name</label>
 																								<select name="company" class="form-control" id="company" required>
-																												<option value=''>Empresa</option>
-																												<option value="Nintendo">NIntendo</option>
-																												<option value="Sony">Sony</option>
-																												<option value="Microsoft">Microsoft</option>
-																												<option value="Valve">Valve</option>
-																												<option value="Sega">Sega</option>
+																												<option value=''>Selecionar Empresa</option>
+																												@foreach ($company as $companies)
+																																<option value={{ $companies->name }}>{{ $companies->name }}</option>
+																																{{$companies->name}}
+																												@endforeach
 																								</select>
 																				</div>
 

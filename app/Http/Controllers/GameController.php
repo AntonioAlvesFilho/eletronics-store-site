@@ -11,7 +11,10 @@ class GameController extends Controller
 	{
 		
 		$game = Game::all();
-		return view('game.games', ['game' => $game]);
+		$company = \DB::table('company')
+		->select('*')
+		->get();
+		return view('game.games', ['game' => $game, 'company' => $company]);
 	}
 
 

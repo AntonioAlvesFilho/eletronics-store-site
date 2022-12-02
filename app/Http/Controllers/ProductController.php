@@ -19,7 +19,11 @@ class ProductController extends Controller
 	{
 
 		$products = Product::all();
-		return view('product.products', ['products' => $products]);
+		$company = \DB::table('company')
+		->select('*')
+		->get();
+
+		return view('product.products', ['products' => $products, 'company' => $company]);
 
 	}
 
