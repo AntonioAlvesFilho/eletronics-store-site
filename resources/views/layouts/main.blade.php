@@ -71,9 +71,11 @@
 																																				Manegement
 																																</a>
 																																<ul class="dropdown-menu">
-																																				<li><a class="dropdown-item" href="/product/products">Product Manager</a></li>
-																																				<li><a class="dropdown-item" href="/game/games">Game Manager</a></li>
-																																				<li><a class="dropdown-item" href="/company/companies">Company Manager</a></li>
+																																				<li><a class="dropdown-item" href="/product/products">Product Management</a></li>
+																																				<li><a class="dropdown-item" href="/game/games">Game Management</a></li>
+																																				<li><a class="dropdown-item" href="/company/companies">Company Management</a></li>
+																																				<li><a class="dropdown-item" href="/recomendation/recomendations">Recomendation
+																																												Management</a></li>
 
 																																</ul>
 																												</li>

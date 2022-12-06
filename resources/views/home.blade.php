@@ -108,12 +108,12 @@
 												<div class="imgDiv" align="center">
 																<h2>Lançamento em Destaque</h2>
 
-																<img class="hot" src="/img/dead.jpg" alt="">
+																<img class="hot" src="http://localhost:8080/teste" alt="bestSaller">
 
 												</div>
 
 
-												
+
 								</div>
 
 				@endsection
